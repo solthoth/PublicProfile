@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolThoth.PublicProfile.Website", "src\SolThoth.PublicProfile.Website\SolThoth.PublicProfile.Website.csproj", "{9A839DFC-07A1-4B8E-A312-02A2E9B77BF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A839DFC-07A1-4B8E-A312-02A2E9B77BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A839DFC-07A1-4B8E-A312-02A2E9B77BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A839DFC-07A1-4B8E-A312-02A2E9B77BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A839DFC-07A1-4B8E-A312-02A2E9B77BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

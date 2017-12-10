@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/SolThoth.PublicProfile.Site/SolThoth.PublicProfile.Site.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
