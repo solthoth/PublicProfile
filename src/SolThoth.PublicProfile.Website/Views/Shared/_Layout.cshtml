@@ -3,69 +3,125 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SolThoth.PublicProfile.Website</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Public website/portfolio">
+    <meta name="keywords" content="html5, css3, mobile first, responsive, portfolio, bootstrap theme" />
+    <meta name="author" content="Carlos Barajas">
+        
+    <title>SolThoth - Carlos Barajas</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/vendors/Phorto-1.2/css/bootstrap.min.css" />
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="~/vendors/Phorto-1.2/css/animate.css" />
+    <link href="~/vendors/Phorto-1.2/css/style.css" rel="stylesheet" />
+    <link href="~/vendors/Phorto-1.2/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/vendors/Phorto-1.2/css/owl.theme.css" rel="stylesheet" />
+    <link href="~/vendors/Phorto-1.2/css/animate.css" rel="stylesheet" />
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600,700' rel='stylesheet' type='text/css' />
+    <link href="~/vendors/Phorto-1.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/vendors/Phorto-1.2/css/linear-icons.css" rel="stylesheet" />
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        
+    <!-- Custom CSS -->
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">SolThoth.PublicProfile.Website</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
+    <div class="wrapper">
+        <!-- side navigation -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#"><img src="~/vendors/Phorto-1.2/images/logo.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="menu-item" href="/">Home</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="about.html">About</a>
+                </li>
+                <li class="active">
+                    <a class="menu-item" href="services.html">Services</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="contact.html">Contact</a>
+                </li>
+                <li class="menu-footer">
+                    <span>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </span>
+                    <p>© 2016 Phorto Theme<p>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <div class="container body-content">
+        <!-- / side navigation -->
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - SolThoth.PublicProfile.Website</p>
-        </footer>
     </div>
+    <!-- javascript -->
+    <script src="~/vendors/Phorto-1.2/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="~/vendors/Phorto-1.2/js/bootstrap.min.js"></script>
+    <!-- javascript plugins -->
+    <script src="~/vendors/Phorto-1.2/js/owl.carousel.min.js"></script>
+    <script src="~/vendors/Phorto-1.2/js/scrolling-nav.js"></script>
+    <script src="~/vendors/Phorto-1.2/js/jquery.easing.min.js"></script>
+    <!-- menu toggle script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <!-- portfolio script -->
+    <script src="~/vendors/Phorto-1.2/js/jquery.shuffle.min.js"></script>
+    <script src="~/vendors/Phorto-1.2/js/custom.js"></script>
+    <!-- count-to script -->
+    <script src="~/vendors/Phorto-1.2/js/jquery.countTo.js"></script>
+    <script type="text/javascript">
+          $('.timer').countTo({
+            refreshInterval: 60,
+            formatter: function (value, options) {
+              return value.toFixed(options.decimals);
+            },
+          });
+    </script>
+    <!-- map script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA40uewXP25u1A4o9u8ueBimZZwIdNLkY"></script>
+    <script src="~/vendors/Phorto-1.2/js/map.js"></script>
+    <!-- contact script -->
+    <script src="~/vendors/Phorto-1.2/js/validator.min.js" type="text/javascript"></script>
+    <script src="~/vendors/Phorto-1.2/js/form-scripts.js" type="text/javascript"></script>
 
     <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
-
     @RenderSection("Scripts", required: false)
 </body>
 </html>
