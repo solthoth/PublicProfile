@@ -28,7 +28,7 @@
         </li>
         <li class="menu-footer">
             <span>
-                @foreach(var link in Model.SocialMediaLinks)
+                @foreach(var link in Model.SocialMediaLinks.Where(s => s.Active))
                 {
                 <a href="@link.Url"><i class="fa @link.CssIcon"></i></a>
                 }
