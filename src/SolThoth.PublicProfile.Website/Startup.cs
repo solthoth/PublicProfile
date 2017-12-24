@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SolThoth.PublicProfile.DataAccess;
 
 namespace SolThoth.PublicProfile.Website
 {
@@ -18,6 +19,7 @@ namespace SolThoth.PublicProfile.Website
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddScoped((arg) => Factory.GetPublicProfileContext());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

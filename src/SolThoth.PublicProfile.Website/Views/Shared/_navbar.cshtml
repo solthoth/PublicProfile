@@ -1,5 +1,8 @@
-@model SolThoth.PublicProfile.Website.Models.NavbarViewModel
-
+@using SolThoth.PublicProfile.SharedTypes.DataAccess
+@inject IPublicProfileData profileData
+@{
+    var links = profileData.GetSocialMediaInformation();
+}
 <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
@@ -28,7 +31,7 @@
         </li>
         <li class="menu-footer">
             <span>
-                @foreach(var link in Model.SocialMediaLinks.Where(s => s.Active))
+                @foreach(var link in links.Where(s => s.Active))
                 {
                 <a href="@link.Url"><i class="fa @link.CssIcon"></i></a>
                 }

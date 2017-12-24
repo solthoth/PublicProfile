@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using SolThoth.PublicProfile.SharedTypes;
 using SolThoth.PublicProfile.SharedTypes.DataAccess;
 
@@ -11,6 +10,7 @@ namespace SolThoth.PublicProfile.DataAccess.Fixed
 
         public FixedPublicProfileData()
         {
+            Initialize();
         }
 
         private void Initialize()

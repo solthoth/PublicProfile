@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Linq;
 using SolThoth.PublicProfile.SharedTypes;
+using SolThoth.PublicProfile.SharedTypes.DataAccess;
 
 namespace SolThoth.PublicProfile.Website.Models
 {
@@ -9,6 +11,5 @@ namespace SolThoth.PublicProfile.Website.Models
         {
             
         }
-        public List<SocialMedia> SocialMediaLinks { get; }
     }
 }
